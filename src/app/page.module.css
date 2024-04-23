@@ -37,11 +37,10 @@
 
 .hero_text {
   opacity: 0; /* Initially hide the text */
-  animation: hero_animation 2.5s forwards;
-}
-
-.hero_text:hover {
-  transform: rotate(360deg);
+  animation-name: hero_animation;
+  animation-duration: 2.5s;
+  animation-fill-mode: forwards;
+  /* animation: hero_animation 2.5s forwards; */
 }
 
 @keyframes hero_animation {
